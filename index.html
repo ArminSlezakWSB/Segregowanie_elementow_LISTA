@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Listy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <main>
+       <header>
+           <input type="text" id="text">
+           <input type="button" value="przeslij do lewej" onclick="przepisz(1);">
+           <input type="button" value="przeslij do prawej" onclick="przepisz(2);">
+       </header>
+        <section id="lewa"></section>
+        <section>
+            <input type="button" value="<" onclick="przenies_na_lewo();">
+            <input type="button" value=">" onclick="przenies_na_prawo();">
+            <input type="button" value="<<" onclick="przenies_wszystko_na_lewo();">
+            <input type="button" value=">>" onclick="przenies_wszystko_na_prawo();">
+            <input type="button" value="x" onclick="usun();">
+        </section>
+        <section id="prawa" dir="rtl"></section>
+    </main>    
+    <script src="script.js"></script>
+</body>
+</html>
